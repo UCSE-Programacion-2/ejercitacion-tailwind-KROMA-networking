@@ -1,59 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Labs - Privacidad</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
-  <body class="site-body">
-    <header class="site-header">
-      <div class="container nav-wrapper">
-        <a class="brand" href="../index.html">Tailwind Labs</a>
-        <nav class="site-nav">
-          <a href="../index.html">Inicio</a>
-          <a href="./about.html">Sobre el curso</a>
-          <a href="./faq.html">FAQ</a>
-          <a class="is-active" href="./privacy.html">Privacidad</a>
-        </nav>
-      </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans min-h-screen flex flex-col">
+
+    <header class="bg-white border-b border-slate-200">
+        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+            <a class="text-xl font-bold text-indigo-600" href="../index.html">Tailwind Labs</a>
+            <nav id="menu-principal" class="flex space-x-6 text-sm font-medium">
+                <a href="../index.html" class="text-slate-600 hover:text-indigo-600 transition">Inicio</a>
+                <a href="./about.html" class="text-slate-600 hover:text-indigo-600 transition">Sobre el curso</a>
+                <a href="./faq.html" class="text-slate-600 hover:text-indigo-600 transition">Preguntas frecuentes</a>
+                <a href="./privacy.html" class="text-indigo-600">Privacidad</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="site-main">
-      <section class="container section">
-        <div class="highlight-box">
-          <h1>Politica de privacidad</h1>
-          <p>
-          Esta pagina sirve para practicar bloques informativos, listas y estilos con jerarquia visual.
-          </p>
+    <main class="flex-grow container mx-auto px-4 py-12">
+        <h1 class="text-3xl font-bold mb-8">Políticas de Privacidad</h1>
+        
+        <div id="privacy-cards" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl border-l-4 border-indigo-600 shadow-sm">
+                <h3 class="font-bold text-xl mb-2 text-slate-800">Uso de datos</h3>
+                <p class="text-slate-600">Los datos recolectados en esta práctica académica son ficticios y no se almacenan en ningún servidor externo.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border-l-4 border-indigo-600 shadow-sm">
+                <h3 class="font-bold text-xl mb-2 text-slate-800">Cookies</h3>
+                <p class="text-slate-600">No utilizamos cookies de seguimiento ni herramientas de terceros para analizar tu comportamiento.</p>
+            </div>
         </div>
-
-        <div id="privacy-cards" class="privacy-cards">
-          <article class="privacy-card">
-            <h2>Datos recopilados</h2>
-            <ul>
-              <li>Nombre y apellido</li>
-              <li>Correo electronico institucional</li>
-              <li>Actividad dentro del campus</li>
-            </ul>
-          </article>
-          <article class="privacy-card">
-            <h2>Uso de la informacion</h2>
-            <ul>
-              <li>Seguimiento de progreso academico</li>
-              <li>Feedback personalizado de actividades</li>
-              <li>Comunicacion de novedades del curso</li>
-            </ul>
-          </article>
-        </div>
-      </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-wrapper">
-        <p>Programacion II - Ejercitacion Tailwind CSS</p>
-        <p class="student-signature">Desarrollado por [Nombre y Apellido]</p>
-      </div>
+    <footer class="bg-white border-t border-slate-200 py-8 mt-auto text-center md:text-left">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-500 text-sm">Programación II - Taller Tailwind</p>
+            <p class="text-indigo-600 font-semibold italic">Desarrollado por Sergio Sanchez</p>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
